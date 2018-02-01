@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Templates -->
+
+	<definition name="layout.basic" template="/layout/basic.jsp">
+
+		<put-attribute name="header" value="/views/jsp/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/views/jsp/footer.jsp" />
+	</definition>
+
+	<!-- Pages -->
+
+	<definition name="home" extends="layout.basic" >
+		<put-attribute name="body" value="/views/jsp/home.jsp" />
+	</definition>
+	
+		<definition name="facebookConnect" extends="layout.basic" >
+		<put-attribute name="body" value="/views/jsp/facebookConnect.jsp" />
+	</definition>
+
+			<definition name="hello" extends="layout.basic" >
+		<put-attribute name="body" value="/views/jsp/hello.jsp" />
+	</definition>
+
+	<definition name="login" extends="layout.basic">
+		<put-attribute name="body" value="/views/jsp/user/login.jsp" />
+	</definition>
+
+	<definition name="register" extends="layout.basic">
+		<put-attribute name="body" value="/views/jsp/user/register.jsp" />
+	</definition>
+
+	<definition name="resetpassword" extends="layout.basic">
+		<put-attribute name="body" value="/views/jsp/user/resetpassword.jsp" />
+	</definition>
+
+	<definition name="updatepassword" extends="layout.basic">
+		<put-attribute name="body" value="/views/jsp/user/updatepassword.jsp" />
+	</definition>
+
+	<definition name="events" extends="layout.basic">
+		<put-attribute name="body" value="/views/jsp/event/events.jsp" />
+	</definition>
+
+	<definition name="eventdetail" extends="layout.basic">
+		<put-attribute name="body" value="/views/jsp/event/eventdetail.jsp" />
+	</definition>
+
+	<definition name="addevent" extends="layout.basic">
+		<put-attribute name="body" value="/views/jsp/event/addevent.jsp" />
+	</definition>
+
+	<definition name="editevent" extends="layout.basic">
+		<put-attribute name="body" value="/views/jsp/event/editevent.jsp" />
+	</definition>
+	
+		<definition name="err" extends="layout.basic">
+		<put-attribute name="body" value="/views/jsp/err.jsp" />
+	</definition>
+	
+</tiles-definitions>
